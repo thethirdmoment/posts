@@ -1,0 +1,20 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Test every post's code
+        run: |
+          set -e
+          for d in posts/*/code; do
+            echo "::group::$d"
+            uv run --directory "$d" pytest
+            echo "::endgroup::"
+          done
