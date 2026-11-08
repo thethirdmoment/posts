@@ -9,6 +9,7 @@ and running it reproduces every number, table and chart in the article.
 |---|---|---|
 | 001 | How an Options Market Maker Makes (and Loses) Money | [posts/001-options-market-maker](posts/001-options-market-maker) |
 | 002 | What a Volatility Trader Actually Trades | [posts/002-volatility-trader](posts/002-volatility-trader) |
+| 003 | How an ETF Market Maker Keeps a Fund's Price Close to Its Value | [posts/003-etf-market-maker](posts/003-etf-market-maker) |
 
 ## Run an article's code
 
