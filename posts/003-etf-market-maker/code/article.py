@@ -710,8 +710,8 @@ def premium_panel(ax, primary, colour):
 def chart_premium(res, out):
     """One month's premium with creation and redemption on and off."""
     fig, ax = plt.subplots(2, 1, figsize=(7, 4.8), sharex=True)
-    on = premium_panel(ax[0], True, BLUE)
-    off = premium_panel(ax[1], False, ORANGE)
+    premium_panel(ax[0], True, BLUE)
+    premium_panel(ax[1], False, ORANGE)
     ax[1].set_xticks(range(0, BASE.days + 1, 5))
     ax[1].set_xlabel("trading days into the month")
 
@@ -719,13 +719,6 @@ def chart_premium(res, out):
     finish(ax[1], "Premium in bp, creation and redemption switched off")
     fig.savefig(out / "premium.png", metadata={"Software": None})
     plt.close(fig)
-
-    sampled = slice(None, None, MINUTES // 6)
-    band = [band_bp(BASE)] * len(on[sampled])
-    res["cover"] = {"on": on[sampled].tolist()}
-    res["cover"]["off"] = off[sampled].tolist()
-    res["cover"]["band_high"] = band
-    res["cover"]["band_low"] = [-b for b in band]
 
 
 def chart_fees(res, out):
