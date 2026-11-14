@@ -15,6 +15,7 @@ and running it reproduces every number, table and chart in the article.
 | 006 | How a Quant Researcher Tells a Signal From a Lucky Backtest | [posts/006-systematic-quant-researcher](posts/006-systematic-quant-researcher) |
 | 007 | How an Execution Trader Buys a Million Shares | [posts/007-execution-trader](posts/007-execution-trader) |
 | 008 | Why a Tail-Risk Hedger Buys Puts That Usually Expire Worthless | [posts/008-tail-risk-pm](posts/008-tail-risk-pm) |
+| 009 | How a Trend Follower Profits From Markets That Keep Moving | [posts/009-cta-trend-follower](posts/009-cta-trend-follower) |
 
 ## Run an article's code
 
